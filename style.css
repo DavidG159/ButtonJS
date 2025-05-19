@@ -6,6 +6,7 @@
 
 body {
     background-color: darkgrey;
+    transition: background-color 2s;
 }
 
 .btn {

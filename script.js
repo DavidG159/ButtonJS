@@ -22,6 +22,5 @@ function setRandomColor() {
 
 btn1.addEventListener('click', function () {
     setRandomColor();
-    console.log('test');
-    console.log(getRandomColor());
+
 });
