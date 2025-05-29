@@ -3,7 +3,7 @@
 const btn1 = document.querySelector('.button--1');
 const btn2 = document.querySelector('.button--2');
 const btn3 = document.querySelector('.button--3');
-
+const clicksfx = new Audio('click.mp3');
 
 function getRandomColor() {
     let letters = '0123456789ABCDEF';
@@ -22,5 +22,6 @@ function setRandomColor() {
 
 btn1.addEventListener('click', function () {
     setRandomColor();
+    clicksfx.play();
 
 });
