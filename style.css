@@ -45,3 +45,16 @@ body {
     background-color: #D3D3D3;
 
 }
+
+.reset-btn {
+    display: inline-block;
+    margin-left: 53rem;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
