@@ -48,13 +48,20 @@ body {
 
 .reset-btn {
     display: inline-block;
-    margin-left: 53rem;
+    cursor: pointer;
+    margin-left: 57.2rem;
+    margin-top: 1rem;
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
     border-radius: 8px;
+    padding: 7px 20px;
 }
 
 .hidden {
     display: none;
+}
+
+.btn-2 {
+    display: inline-block;
 }
