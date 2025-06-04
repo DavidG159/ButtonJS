@@ -44,4 +44,8 @@ btn2.addEventListener('click', function () {
     button2_display3.classList.remove('hidden');
     incrementCounter();
 
-})
+});
+
+button2_display2.addEventListener('click', function () {
+    clickcount.textContent = 0;
+});
