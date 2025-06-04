@@ -8,7 +8,7 @@ const button2_display1 = document.querySelector('.counter-display');
 const button2_display2 = document.querySelector('.reset-btn');
 const button2_display3 = document.querySelector('.close-btn');
 const clickcount = document.querySelector('.score');
-
+let counter = 0;
 
 
 function getRandomColor() {
@@ -27,7 +27,7 @@ function setRandomColor() {
 
 
 function incrementCounter() {
-    let counter = 0;
+
     counter += 1;
     clickcount.textContent = counter;
 }
