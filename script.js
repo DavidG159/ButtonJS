@@ -32,6 +32,11 @@ function incrementCounter() {
     clickcount.textContent = counter;
 }
 
+function reset() {
+    counter = 0;
+    clickcount.textContent = 0;
+}
+
 btn1.addEventListener('click', function () {
     setRandomColor();
     clicksfx.play();
@@ -47,7 +52,15 @@ btn2.addEventListener('click', function () {
 });
 
 button2_display2.addEventListener('click', function () {
+    reset()
 
-    counter = 0;
-    clickcount.textContent = 0;
+});
+
+button2_display3.addEventListener('click', function () {
+
+    reset()
+    button2_display1.classList.add('hidden');
+    button2_display2.classList.add('hidden');
+    button2_display3.classList.add('hidden');
+
 });
