@@ -7,6 +7,9 @@ const clicksfx = new Audio('click.mp3');
 const button2_display1 = document.querySelector('.counter-display');
 const button2_display2 = document.querySelector('.reset-btn');
 const button2_display3 = document.querySelector('.close-btn');
+const clickcount = document.querySelector('.score');
+
+
 
 function getRandomColor() {
     let letters = '0123456789ABCDEF';
@@ -23,6 +26,12 @@ function setRandomColor() {
 }
 
 
+function incrementCounter() {
+    let counter = 0;
+    counter += 1;
+    clickcount.textContent = counter;
+}
+
 btn1.addEventListener('click', function () {
     setRandomColor();
     clicksfx.play();
@@ -33,6 +42,6 @@ btn2.addEventListener('click', function () {
     button2_display1.classList.remove('hidden');
     button2_display2.classList.remove('hidden');
     button2_display3.classList.remove('hidden');
-
+    incrementCounter();
 
 })
