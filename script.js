@@ -47,5 +47,7 @@ btn2.addEventListener('click', function () {
 });
 
 button2_display2.addEventListener('click', function () {
+
+    counter = 0;
     clickcount.textContent = 0;
 });
