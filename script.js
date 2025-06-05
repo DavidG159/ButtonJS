@@ -6,6 +6,7 @@ const btn3 = document.querySelector('.button--3');
 const clicksfx = new Audio('click.mp3');
 const clicksfx2 = new Audio('click2.mp3');
 const clicksfx3 = new Audio('click3.mp3');
+const clicksfx4 = new Audio('click4.mp3');
 const button2_display1 = document.querySelector('.counter-display');
 const button2_display2 = document.querySelector('.reset-btn');
 const button2_display3 = document.querySelector('.close-btn');
@@ -66,5 +67,5 @@ button2_display3.addEventListener('click', function () {
     button2_display1.classList.add('hidden');
     button2_display2.classList.add('hidden');
     button2_display3.classList.add('hidden');
-
+    clicksfx4.play();
 });
