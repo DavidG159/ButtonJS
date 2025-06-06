@@ -13,7 +13,7 @@ const button2_display3 = document.querySelector('.close-btn');
 const clickcount = document.querySelector('.score');
 const quote = document.querySelector('.quote-text');
 const quotebtn = document.querySelector('.quote-btn');
-
+const author = document.querySelector('.author-text');
 
 let counter = 0;
 
@@ -43,6 +43,12 @@ function reset() {
     counter = 0;
     clickcount.textContent = 0;
 }
+
+function displayQuote() {
+
+}
+
+
 
 btn1.addEventListener('click', function () {
     setRandomColor();
@@ -75,5 +81,8 @@ button2_display3.addEventListener('click', function () {
 });
 
 btn3.addEventListener('click', function () {
+    author.classList.remove('hidden');
+    quotebtn.classList.remove('hidden');
+    quote.classList.remove('hidden');
 
 });
