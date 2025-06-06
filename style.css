@@ -100,3 +100,21 @@ body {
     gap: 1rem;
     align-items: center;
 }
+
+.quotearea {
+    position: absolute;
+    margin-left: 85.9rem;
+    margin-top: 17rem;
+    border-style: solid;
+    display: flex;
+
+}
+
+.author {}
+
+.quote-text {
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}
