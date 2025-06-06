@@ -14,6 +14,7 @@ const clickcount = document.querySelector('.score');
 const quote = document.querySelector('.quote-text');
 const quotebtn = document.querySelector('.quote-btn');
 const author = document.querySelector('.author-text');
+const quotegen = new Map(['Yogi Bear', 'You can observe a lot just by watching']);
 
 let counter = 0;
 
@@ -45,6 +46,8 @@ function reset() {
 }
 
 function displayQuote() {
+
+
 
 }
 
