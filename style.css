@@ -47,7 +47,7 @@ body {
 }
 
 .reset-btn {
-    display: inline-block;
+
     cursor: pointer;
     margin-left: 54.5rem;
     margin-top: 1rem;
@@ -56,11 +56,26 @@ body {
     font-weight: 600;
     border-radius: 8px;
     padding: 7px 20px;
+
 }
 
+
+
 .close-btn {
-    display: inline-block;
+
     cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 7px 20px;
+}
+
+.quote-btn {
+
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 84.5rem;
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
