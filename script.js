@@ -11,6 +11,10 @@ const button2_display1 = document.querySelector('.counter-display');
 const button2_display2 = document.querySelector('.reset-btn');
 const button2_display3 = document.querySelector('.close-btn');
 const clickcount = document.querySelector('.score');
+const quote = document.querySelector('.quote-text');
+const quotebtn = document.querySelector('.quote-btn');
+
+
 let counter = 0;
 
 
@@ -68,4 +72,8 @@ button2_display3.addEventListener('click', function () {
     button2_display2.classList.add('hidden');
     button2_display3.classList.add('hidden');
     clicksfx4.play();
+});
+
+btn3.addEventListener('click', function () {
+
 });

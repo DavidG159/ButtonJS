@@ -103,14 +103,24 @@ body {
 
 .quotearea {
     position: absolute;
-    margin-left: 85.9rem;
-    margin-top: 17rem;
-    border-style: solid;
+    margin-left: 85.4rem;
+    margin-top: -7rem;
     display: flex;
+    text-align: center;
 
 }
 
-.author {}
+.author {
+    position: absolute;
+    margin-left: 86.8rem;
+    margin-top: -3rem;
+    display: flex;
+}
+
+.author-text {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
 
 .quote-text {
     font-size: 30px;
