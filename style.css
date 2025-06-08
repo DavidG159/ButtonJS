@@ -113,8 +113,8 @@ body {
 
 .quotearea {
     position: absolute;
-    margin-left: 85.4rem;
-    margin-top: -7rem;
+    margin-left: 37rem;
+    margin-top: -17rem;
     display: flex;
     text-align: center;
 
@@ -122,8 +122,8 @@ body {
 
 .author {
     position: absolute;
-    margin-left: 86.8rem;
-    margin-top: -3rem;
+    margin-left: 55.7rem;
+    margin-top: -12rem;
     display: flex;
 }
 

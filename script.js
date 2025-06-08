@@ -67,6 +67,11 @@ function reset() {
     clickcount.textContent = 0;
 }
 
+function resetquote() {
+    quote.textContent = 'Quote';
+    author.textContent = 'Author';
+}
+
 
 
 
@@ -105,7 +110,7 @@ btn3.addEventListener('click', function () {
     quotebtn.classList.remove('hidden');
     quote.classList.remove('hidden');
     button3_close.classList.remove('hidden');
-    displayQuote(quotegen);
+
 
 });
 
@@ -115,6 +120,11 @@ button3_close.addEventListener('click', function () {
     quotebtn.classList.add('hidden');
     quote.classList.add('hidden');
     button3_close.classList.add('hidden');
+    resetquote();
 
 
+})
+
+quotebtn.addEventListener('click', function () {
+    displayQuote(quotegen);
 })
