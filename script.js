@@ -14,9 +14,27 @@ const clickcount = document.querySelector('.score');
 const quote = document.querySelector('.quote-text');
 const quotebtn = document.querySelector('.quote-btn');
 const author = document.querySelector('.author-text');
-const quotegen = new Map(['Yogi Bear', 'You can observe a lot just by watching']);
+const quotegen = new Map([
+    ['Yogi Bear', 'You can observe a lot just by watching'],
+    ['Ralph Waldo', 'Life is a journey, not a destination'],
+    ['Serena Williams', 'You have to believe in yourself when no one else does']
+]);
 
 let counter = 0;
+
+
+//
+
+function displayQuote(quoteentry) {
+
+    for (const [x, y] of quoteentry) console.log(x, y);
+
+
+}
+
+
+
+
 
 
 function getRandomColor() {
@@ -45,11 +63,6 @@ function reset() {
     clickcount.textContent = 0;
 }
 
-function displayQuote() {
-
-
-
-}
 
 
 
@@ -87,5 +100,7 @@ btn3.addEventListener('click', function () {
     author.classList.remove('hidden');
     quotebtn.classList.remove('hidden');
     quote.classList.remove('hidden');
+
+
 
 });
