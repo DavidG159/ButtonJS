@@ -101,6 +101,4 @@ btn3.addEventListener('click', function () {
     quotebtn.classList.remove('hidden');
     quote.classList.remove('hidden');
 
-
-
 });
