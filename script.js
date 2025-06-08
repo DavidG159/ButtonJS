@@ -28,13 +28,16 @@ let counter = 0;
 
 function displayQuote(quoteentry) {
 
-    for (const [x, y] of quoteentry) console.log(x, y);
+    //for (const [x, y] of quoteentry) console.log(x, y);
+    const quotearr = Array.from(quoteentry.entries());
+    //console.log(quotearr);
+    const randomQuote = quotearr[Math.floor(Math.random() * quotearr.length)];
+    console.log(`"${randomQuote[0]}" — ${randomQuote[1]}`);
 
+    author.textContent = randomQuote[0];
+    quote.textContent = randomQuote[1];
 
 }
-
-
-
 
 
 
@@ -102,7 +105,7 @@ btn3.addEventListener('click', function () {
     quotebtn.classList.remove('hidden');
     quote.classList.remove('hidden');
     button3_close.classList.remove('hidden');
-
+    displayQuote(quotegen);
 
 });
 
