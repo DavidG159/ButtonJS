@@ -14,6 +14,7 @@ const clickcount = document.querySelector('.score');
 const quote = document.querySelector('.quote-text');
 const quotebtn = document.querySelector('.quote-btn');
 const author = document.querySelector('.author-text');
+const button3_close = document.querySelector('.quote-close-btn');
 const quotegen = new Map([
     ['Yogi Bear', 'You can observe a lot just by watching'],
     ['Ralph Waldo', 'Life is a journey, not a destination'],
@@ -100,5 +101,17 @@ btn3.addEventListener('click', function () {
     author.classList.remove('hidden');
     quotebtn.classList.remove('hidden');
     quote.classList.remove('hidden');
+    button3_close.classList.remove('hidden');
+
 
 });
+
+button3_close.addEventListener('click', function () {
+
+    author.classList.add('hidden');
+    quotebtn.classList.add('hidden');
+    quote.classList.add('hidden');
+    button3_close.classList.add('hidden');
+
+
+})
