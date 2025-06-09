@@ -25,19 +25,44 @@ const quotegen = new Map([
 
 let counter = 0;
 
+// for (const [x, y] of quotegen.entries()) {
+//     console.log(y);
+// }
+//console.log(quotegen.entries());
+const quoteauthor = quotegen.keys();
+const quotedesc = quotegen.values();
+
+
+
+
 
 //
+//for (const [x, y] of quoteentry) console.log(x, y);
+// const quotearr = Array.from(quotegen.entries());
+// console.log(quotearr[0], quotearr[1], quotearr[2]);
+// console.log(quotegen);
+//console.log(quotearr);
+//const randomQuote = quotearr[Math.floor(Math.random() * quotearr.length)];
+//console.log(`"${randomQuote[0]}" — ${randomQuote[1]}`);
+
+//author.textContent = randomQuote[0];
+//quote.textContent = randomQuote[1];
+
+
+
+
+
 
 function displayQuote(quoteentry) {
 
-    //for (const [x, y] of quoteentry) console.log(x, y);
-    const quotearr = Array.from(quoteentry.entries());
-    //console.log(quotearr);
-    const randomQuote = quotearr[Math.floor(Math.random() * quotearr.length)];
-    console.log(`"${randomQuote[0]}" — ${randomQuote[1]}`);
+    // //for (const [x, y] of quoteentry) console.log(x, y);
+    // const quotearr = Array.from(quoteentry.entries());
+    // //console.log(quotearr);
+    // const randomQuote = quotearr[Math.floor(Math.random() * quotearr.length)];
+    // console.log(`"${randomQuote[0]}" — ${randomQuote[1]}`);
 
-    author.textContent = randomQuote[0];
-    quote.textContent = randomQuote[1];
+    // author.textContent = randomQuote[0];
+    // quote.textContent = randomQuote[1];
 
 }
 
@@ -130,6 +155,21 @@ button3_close.addEventListener('click', function () {
 })
 
 quotebtn.addEventListener('click', function () {
-    displayQuote(quotegen);
+
+    const quoteresult = quotedesc.next();
+    const authorresult = quoteauthor.next();
+
+    if (quoteresult.done || authorresult.done) {
+        quotedesc = quotegen.values();
+        quoteauthor = quotegen.values();
+        const firstQuote = quoteIterator.next();
+        const firstAuthor = authorIterator.next();
+        quote.textContent = firstQuote.value;
+        author.textContent = firstAuthor.value;
+    } else {
+        quote.textContent = quoteresult.value;
+        author.textContent = authorresult.value;
+    }
+
     next_page.play();
 })
