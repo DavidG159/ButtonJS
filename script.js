@@ -123,6 +123,7 @@ button3_close.addEventListener('click', function () {
     quotebtn.classList.add('hidden');
     quote.classList.add('hidden');
     button3_close.classList.add('hidden');
+    clicksfx4.play();
     resetquote();
 
 
