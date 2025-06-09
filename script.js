@@ -8,6 +8,7 @@ const clicksfx2 = new Audio('click2.mp3');
 const clicksfx3 = new Audio('click3.mp3');
 const clicksfx4 = new Audio('click4.mp3');
 const clicksfx5 = new Audio('click5.mp3');
+const next_page = new Audio('next-page.mp3');
 const button2_display1 = document.querySelector('.counter-display');
 const button2_display2 = document.querySelector('.reset-btn');
 const button2_display3 = document.querySelector('.close-btn');
@@ -129,4 +130,5 @@ button3_close.addEventListener('click', function () {
 
 quotebtn.addEventListener('click', function () {
     displayQuote(quotegen);
+    next_page.play();
 })
