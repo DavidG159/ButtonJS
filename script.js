@@ -156,6 +156,7 @@ button3_close.addEventListener('click', function () {
 
 quotebtn.addEventListener('click', function () {
 
+    //fix
     const quoteresult = quotedesc.next();
     const authorresult = quoteauthor.next();
 
